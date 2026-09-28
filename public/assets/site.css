@@ -655,3 +655,8 @@ details p {
   display: inline-block;
   margin-top: 10px;
 }
+
+
+#software .project__caption h3 a {
+  text-decoration: none;
+}
