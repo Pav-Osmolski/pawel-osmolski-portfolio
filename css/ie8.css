@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Retain background transparency */
+#header_container { 
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000)"; /* IE8 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000); /* IE6 & 7 */
+	zoom: 1;
+}
+
+#footer {
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#F21B3651,endColorstr=#F21B3651)"; /* IE8 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#F21B3651,endColorstr=#F21B3651); /* IE6 & 7 */
+	zoom: 1;
+}
+
+/* Fix spacing issue on IE6 & 7 */
+.title-2 {
+	height: 1px;
+	overflow: hidden;
+}
+
+/* Fix SoundCloud Flash width */
+.soundcloud-flash {
+	max-width: 850px;
+}
