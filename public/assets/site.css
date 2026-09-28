@@ -337,16 +337,21 @@ nav a,.header-contact {
   position:relative;
   background:var(--panel);
   overflow:hidden;
+  /* Clip the composited zoom layer to a stable card edge. */
+  isolation:isolate;
+  clip-path:inset(0);
 }
 .project__image img {
   width:100%;
   aspect-ratio:5/3;
   object-fit:cover;
   object-position:top;
-  transition:filter 0.2s ease;
+  backface-visibility:hidden;
+  transform:translateZ(0) scale(1);
+  transition:transform 0.2s ease;
 }
 .project__image:hover img {
-  filter:brightness(1.06);
+  transform:translateZ(0) scale(1.025);
 }
 .project__image span {
   position:absolute;
@@ -660,7 +665,7 @@ details p {
   text-decoration: none;
 }
 
-/* Colour transitions keep image edges stationary and focus outlines immediate. */
+/* Animate button colours while keeping focus outlines immediate. */
 button, .button {
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
@@ -670,4 +675,9 @@ button, .button {
 .lightbox button:hover {
   color: var(--accent);
   border-color: var(--accent);
+}
+
+/* Keep keyboard focus visible inside the clipping boundary. */
+.project__image:focus-visible {
+  outline-offset:-3px;
 }
