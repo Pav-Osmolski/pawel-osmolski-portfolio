@@ -23,7 +23,7 @@
 <header class="site-header wrap">
 <a class="wordmark" href="/" aria-label="Pawel Osmolski, home">PO<span aria-hidden="true">.</span></a>
 <nav aria-label="Main navigation">
-<?php foreach (['intro' => 'About', 'music' => 'Music', 'web-design' => 'Web', 'sound-design' => 'Sound', 'remix' => 'Remix'] as $id => $label): ?>
+<?php foreach (['intro' => 'About', 'music' => 'Music', 'web-design' => 'Web', 'software' => 'Software', 'sound-design' => 'Sound', 'remix' => 'Remix'] as $id => $label): ?>
 <a href="<?= $is_home ? '' : '/' ?>#<?= e($id) ?>"><?= e($label) ?></a>
 <?php endforeach; ?>
 </nav>

@@ -644,3 +644,14 @@ details p {
     color:black;
   }
 }
+
+/* Preserve the full artwork in software social-preview images. */
+.project__image--software img {
+  object-fit: contain;
+  object-position: center;
+  background: #15171b;
+}
+.project__caption > .text-link {
+  display: inline-block;
+  margin-top: 10px;
+}

@@ -33,7 +33,7 @@ Apache rules include a few legacy-page redirects, compression and caching. They 
 
 ## Editing
 
-Homepage copy: `public/index.php`. Remix copy: `public/radiohead-remixes/index.php`. Project captions: `src/projects.php`. Shared layout: `src/header.php` and `src/footer.php`. Styles and progressive enhancements: `public/assets/site.css` and `site.js`.
+Homepage copy: `public/index.php`. Remix copy: `public/radiohead-remixes/index.php`. Web project captions: `src/projects.php`. Software projects: `src/software-projects.php`, sourced from the four selected projects in the GitHub profile README. Shared layout: `src/header.php` and `src/footer.php`. Styles and progressive enhancements: `public/assets/site.css` and `site.js`.
 
 The site retains League Gothic, existing photography, portrait and artwork. Project images missing from the original repository were recovered from the user's live site. The older project examples are explicitly identified as an archive. Original source facts are retained; no new clients, qualifications or recent experience have been invented. Please review current artist branding, contact address, agency affiliation and educational wording before publication.
 
