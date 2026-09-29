@@ -681,3 +681,13 @@ button, .button {
 .project__image:focus-visible {
   outline-offset:-3px;
 }
+
+
+/* A small discovery, with a comfortable pointer and keyboard target. */
+.contact { position: relative; }
+.retro-egg { position: absolute; top: 24px; right: 0; display: grid; place-items: center; width: 44px; height: 44px; color: var(--muted); transition: color .2s ease; }
+.retro-egg:hover, .retro-egg:focus-visible { color: var(--accent); }
+.retro-egg svg { overflow: visible; }
+.retro-egg__top, .retro-egg__bottom { transition: transform .2s ease; transform-origin: 16px 22px; }
+.retro-egg:hover .retro-egg__top, .retro-egg:focus-visible .retro-egg__top { transform: translate(-2px, -4px) rotate(-16deg); }
+.retro-egg:hover .retro-egg__bottom, .retro-egg:focus-visible .retro-egg__bottom { transform: translate(1px, 2px) rotate(8deg); }

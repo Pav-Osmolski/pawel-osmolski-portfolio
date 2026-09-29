@@ -1,7 +1,6 @@
 DirectoryIndex index.php
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteRule ^retro\.php$ /#intro [R=301,L,NE]
   RewriteRule ^pages/(home|biography)\.php$ /#intro [R=301,L,NE]
   RewriteRule ^pages/compositions\.php$ /#music [R=301,L,NE]
   RewriteRule ^pages/remixescovers\.php$ /#remix [R=301,L,NE]
