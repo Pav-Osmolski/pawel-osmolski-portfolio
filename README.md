@@ -1,4 +1,4 @@
-# Pawel Osmolski — portfolio refresh
+# Pawel Osmolski Portfolio
 
 A small, server-rendered PHP portfolio. One main page and the separate `/radiohead-remixes/` landing page. No framework, package installation or build step is required.
 
@@ -21,17 +21,6 @@ php tests/retro.php
 
 No database or Composer dependencies. The PHP development server is for local preview only.
 
-## Deployment on IONOS / Apache
-
-1. Back up the existing live directory and hosting configuration.
-2. Upload `public/` and `src/` as sibling directories, and set the domain document root to `public/`. Do not upload `archive/` or `tests/` to a public directory. Alternatively, place the contents of `public/` into the document root with `src/` in its parent directory, preserving the relative layout.
-3. Provision and verify a valid TLS certificate for both the bare domain and `www`. The current live HTTPS endpoint failed during review on 28 September 2026. Canonical metadata and the sitemap target HTTPS; enable the host-level HTTP-to-HTTPS and bare-to-www redirects only after TLS works. No forced HTTPS redirect is shipped because it would currently break the live site.
-4. Check both pages, media playback, image previews, e-mail links and server error logs in staging before switching traffic.
-5. Preserve old publicly linked image/media URLs if needed: the complete originals are in `archive/legacy/`. Copy only required static files into corresponding public paths. The restored public/retro.php is the sole intentional legacy exception; its allowlisted templates live in src/retro/. Do not expose other legacy PHP endpoints. The two page URLs and main section anchors are preserved.
-6. Roll back by restoring the old document root and backed-up files.
-
-Apache rules include a few legacy-page redirects, compression and caching. They require mod_rewrite, mod_headers, mod_deflate and mod_expires where relevant; optional directives are guarded. Configure equivalent rules for other servers. The built-in PHP server does not exercise Apache rules.
-
 ## Editing
 
 Homepage copy: `public/index.php`. Remix copy: `public/radiohead-remixes/index.php`. Web project captions: `src/projects.php`. Software projects: `src/software-projects.php`, sourced from the four selected projects in the GitHub profile README. Shared layout: `src/header.php` and `src/footer.php`. Styles and progressive enhancements: `public/assets/site.css` and `site.js`.
@@ -47,7 +36,6 @@ Third-party playback and external links can change independently of this code. T
 ## Original portfolio easter egg
 
 The small egg in the contact section links to /retro.php and cracks on hover or keyboard focus, respecting reduced-motion preferences. The original bitmap artwork, fixed-width layout and historical biography are preserved. The retro page has a small return link and is excluded from search indexing. PHP routes use a fixed allowlist; invalid or array inputs return 404. Native scrolling and accessible media dialogs replace Highslide, the custom scrollbar and Flash. Closing a video removes the player. Images and menu assets live in public/assets/retro/; no files are served from archive/. Historical third-party content may no longer be available; direct media links remain provided.
-
 
 ## Preserved one-page legacy site
 
