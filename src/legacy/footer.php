@@ -1,7 +1,8 @@
   <div class="bottom-section">
     <div id="author">
-        <p>Website design and code by <a class="title" href="&#109;ailto:pawel&#64;pawel-osmolski&#46;com" target="_blank">Pawel Osmolski</a><br />
-      Optimised for Retina display</p>
+        <p>Designed and built by <a class="title" href="mailto:pawel@pawel-osmolski.com">Pawel Osmolski</a>.<br />
+      An earlier chapter of my portfolio, preserved.<br />
+      <a href="/">Visit my current portfolio ↗</a></p>
     </div>
     <br />
   </div>
