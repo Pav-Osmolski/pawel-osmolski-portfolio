@@ -27,7 +27,7 @@ $softwareProjects = require dirname(__DIR__) . '/src/software-projects.php';
 <p class="eyebrow archive-label">From the project archive</p>
 <div class="projects">
 <?php foreach ($projects as $project): ?>
-<article class="project"><a class="project__image" data-lightbox href="<?= e(asset('images/' . $project['image'])) ?>" aria-label="View <?= e($project['name']) ?> image"><img src="<?= e(asset('images/' . $project['image'])) ?>" alt="<?= e($project['name']) ?> — <?= e($project['detail']) ?>" loading="lazy" width="600" height="360"><span aria-hidden="true">↗</span></a><div class="project__caption"><h3><?= e($project['name']) ?></h3><p><?= e($project['role']) ?></p><p><?= e($project['detail']) ?></p></div></article>
+<article class="project"><a class="project__image" data-lightbox href="<?= e(asset('images/' . $project['image'])) ?>" aria-label="View <?= e($project['name']) ?> image"><img src="<?= e(asset('images/' . $project['image'])) ?>" alt="<?= e($project['name']) ?> — <?= e($project['detail']) ?>" loading="lazy" width="600" height="360"><span aria-hidden="true">↗</span></a><div class="project__caption"><h3><?php if (!empty($project['url'])): ?><a href="<?= e($project['url']) ?>"><?= e($project['name']) ?></a><?php else: ?><?= e($project['name']) ?><?php endif; ?></h3><p><?= e($project['role']) ?></p><p><?= e($project['detail']) ?></p></div></article>
 <?php endforeach; ?>
 </div></section>
 <section id="software" class="work-section wrap" aria-labelledby="software-title">

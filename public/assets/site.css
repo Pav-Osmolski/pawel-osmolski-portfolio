@@ -661,7 +661,8 @@ details p {
   margin-top: 10px;
 }
 
-#software .project__caption h3 a {
+.project__caption h3 a,
+.lightbox p a {
   text-decoration: none;
 }
 

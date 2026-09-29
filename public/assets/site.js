@@ -29,7 +29,16 @@ if (dialog && typeof dialog.showModal === 'function') {
       const caption = link.querySelector('img')?.alt || link.textContent.trim();
       image.src = link.href;
       image.alt = caption;
-      dialog.querySelector('p').textContent = caption;
+      const captionElement = dialog.querySelector('p');
+      const projectLink = link.closest('.project')?.querySelector('.project__caption h3 a');
+      captionElement.replaceChildren();
+      if (projectLink) {
+        const captionLink = projectLink.cloneNode(true);
+        captionLink.textContent = caption;
+        captionElement.append(captionLink);
+      } else {
+        captionElement.textContent = caption;
+      }
       dialog.showModal();
     });
   });
