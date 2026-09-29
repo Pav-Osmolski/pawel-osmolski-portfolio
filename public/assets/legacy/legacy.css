@@ -1,0 +1,508 @@
+@charset "utf-8";
+body,
+h1,
+h2,
+h3,
+h4 {
+    font-family: "League Gothic", sans-serif;
+}
+a,
+body {
+    color: #fff;
+}
+#footer,
+#header_container,
+.rslides li {
+    display: none;
+    left: 0;
+}
+.highslide,
+.highslide-loading,
+a.link,
+a.title,
+span.caption a {
+    text-decoration: none;
+}
+.fa,
+.smooth-fonts {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+    font-family: "League Gothic";
+    src: url(fonts/leaguegothic-regular-webfont.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: carrois_gothicregular;
+    src: url(fonts/carroisgothic-regular-webfont.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+iframe {
+    width: 100%;
+    overflow: hidden;
+    border: none;
+}
+.bg-normal-right {
+    background-image: url(images/pawel-osmolski-background-right.jpg);
+}
+.bg-normal-center {
+    background-image: url(images/pawel-osmolski-background-horizontal.jpg);
+}
+.bg-glasses-right {
+    background-image: url(images/pawel-osmolski-glasses-right.jpg);
+}
+.bg-glasses-center {
+    background-image: url(images/pawel-osmolski-glasses-horizontal.jpg);
+}
+.bg-cover {
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+#bandcamp,
+#contact,
+#facebook,
+#instagram,
+#linkedin,
+#soundcloud,
+#twitter,
+#youtube {
+    background-size: cover;
+}
+h1,
+h2,
+h3,
+h4 {
+    margin: 0 0 27px;
+    padding-top: 0;
+    font-weight: 400;
+}
+.caption,
+li,
+p {
+    font-family: carrois_gothicregular, sans-serif;
+}
+h2 {
+    font-size: 1.5em;
+}
+li,
+p {
+    font-size: 0.8em;
+    line-height: 1.15em;
+}
+li {
+    list-style-type: square;
+}
+a {
+    transition: color 0.2s ease-out;
+}
+a:focus,
+a:hover {
+    color: #89a3bc;
+}
+
+a.link {
+    font-weight: 700;
+    color: #89a3bc;
+}
+img {
+    max-width: 100%;
+    border: 0;
+}
+
+#social-media-icons {
+    float: right;
+    text-align: right;
+    padding-right: 27px;
+}
+#header,
+.title-1 {
+    text-align: center;
+}
+#bandcamp,
+#contact,
+#facebook,
+#github,
+#instagram,
+#linkedin,
+#soundcloud,
+#twitter,
+#youtube {
+    height: 32px;
+    width: 32px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+#facebook {
+    background-image: url(images/greenleaf/facebook.png);
+}
+#github {
+    background-image: url(images/greenleaf/github.png);
+}
+#twitter {
+    background-image: url(images/greenleaf/twitter.png);
+}
+#bandcamp {
+    background-image: url(images/greenleaf/bandcamp.png);
+}
+#soundcloud {
+    background-image: url(images/greenleaf/soundcloud.png);
+}
+#instagram {
+    background-image: url(images/greenleaf/instagram.png);
+}
+#youtube {
+    background-image: url(images/greenleaf/youtube.png);
+}
+#linkedin {
+    background-image: url(images/greenleaf/linkedin.png);
+}
+#contact {
+    background-image: url(images/greenleaf/contact.png);
+}
+.cssfade {
+    float: right;
+}
+.cssfade img {
+    transition: all ease 0.2s;
+}
+.cssfade img:hover {
+    opacity: 0;
+}
+#header_container {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 60px;
+    position: fixed !important;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    margin: 0 auto;
+    z-index: 9;
+}
+#header {
+    font-size: 1.8em;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+#container {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 30px 10px 10px;
+    width: 95%;
+    max-width: 1200px;
+}
+#title-menu {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 1.5em;
+}
+.title-1 {
+    font-size: 4.05em;
+    line-height: 1em;
+    padding-bottom: 11px;
+}
+.title-1 h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+.error,
+.title-3 {
+    padding-top: 20px;
+    text-align: center;
+}
+.title-2 {
+    max-width: 452px;
+    border-top: solid 9px;
+    border-color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+#nme-clipping,
+.image-border {
+    border: 8px solid #fff;
+}
+.title-3 {
+    font-size: 1.3em;
+}
+.error {
+    margin: 0 auto;
+}
+.error img {
+    height: auto;
+}
+.section {
+    clear: left;
+    padding-top: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.bottom-section {
+    clear: left;
+    padding: 90px 0;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    font-size: 1.5em;
+}
+#intro-photo,
+#music-soundcloud,
+#remix-soundcloud,
+#sound-design-youtube,
+#web-design-mockups {
+    float: left;
+    padding-top: 33px;
+    padding-right: 35px;
+    width: 45%;
+    margin: 0 auto;
+    z-index: 1;
+}
+.responsive-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 20px;
+    height: 0;
+    overflow: hidden;
+}
+.responsive-video embed,
+.responsive-video iframe,
+.responsive-video object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.clear-mobile {
+    clear: none;
+}
+#intro-text,
+#music-text,
+#remix-text,
+#sound-design-text,
+#web-design-text {
+    padding-top: 33px;
+    float: left;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+#nme-clipping {
+    float: right;
+    margin: 5px 0 10px 5px;
+    width: 262px;
+    height: 130px;
+}
+.caption {
+    color: #000;
+    font-size: 1.2em;
+}
+#author p {
+    font-size: 1em;
+    font-family: "League Gothic", sans-serif;
+    text-align: center;
+    margin: 0;
+}
+span.caption a {
+    color: #000;
+}
+span.caption a:hover {
+    color: #89a3bc;
+}
+#footer {
+    font-size: 1.5em;
+    background-color: rgba(27, 54, 81, 0.95);
+    bottom: 0;
+    height: 55px;
+    right: 0;
+    position: fixed !important;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    visibility: visible;
+    padding-top: 23px;
+    z-index: 9;
+}
+#footer-text {
+    float: left;
+    text-align: left;
+    padding-top: 2px;
+    padding-left: 27px;
+}
+.fa-fw,
+.fa-li {
+    text-align: center;
+}
+@media screen and (max-width: 1000px) {
+    .clear-mobile {
+        clear: both;
+    }
+    li,
+    p {
+        font-size: 0.7em;
+    }
+    #intro-photo,
+    #intro-text,
+    #music-soundcloud,
+    #music-text,
+    #remix-soundcloud,
+    #remix-text,
+    #sound-design-text,
+    #sound-design-youtube,
+    #web-design-mockups,
+    #web-design-text {
+        float: none;
+        padding-right: 0;
+        width: 100%;
+    }
+    #intro-photo {
+        display: none;
+    }
+    #footer-text,
+    #social-media-icons {
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #social-media-icons {
+        padding-top: 5px;
+    }
+    #footer {
+        padding-top: 8px;
+        padding-bottom: 3px;
+        height: auto;
+        font-size: 1.4em;
+    }
+    #footer-text {
+        padding-left: 0;
+        padding-top: 0;
+    }
+}
+@media only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    #bandcamp,
+    #contact,
+    #facebook,
+    #github,
+    #instagram,
+    #linkedin,
+    #soundcloud,
+    #twitter,
+    #youtube {
+        background-size: cover;
+    }
+    #facebook {
+        background-image: url(images/hires/greenleaf/facebook.png);
+    }
+    #github {
+        background-image: url(images/hires/greenleaf/github.png);
+    }
+    #twitter {
+        background-image: url(images/hires/greenleaf/twitter.png);
+    }
+    #bandcamp {
+        background-image: url(images/hires/greenleaf/bandcamp.png);
+    }
+    #soundcloud {
+        background-image: url(images/hires/greenleaf/soundcloud.png);
+    }
+    #instagram {
+        background-image: url(images/hires/greenleaf/instagram.png);
+    }
+    #youtube {
+        background-image: url(images/hires/greenleaf/youtube.png);
+    }
+    #linkedin {
+        background-image: url(images/hires/greenleaf/linkedin.png);
+    }
+    #contact {
+        background-image: url(images/hires/greenleaf/contact.png);
+    }
+}
+@media print {
+    #header {
+        display: none;
+    }
+    #intro-photo,
+    #intro-text,
+    #music-soundcloud,
+    #music-text,
+    #remix-soundcloud,
+    #remix-text,
+    #sound-design-text,
+    #sound-design-youtube,
+    #web-design-mockups,
+    #web-design-text {
+        float: none;
+        padding-right: 0;
+        width: 100%;
+    }
+}
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    top: 0;
+}
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+
+/* Native gallery and preview controls; original layout and type retained. */
+html { scroll-behavior: smooth; }
+.highslide-caption { display: none; }
+.rslides li { display: block; position: relative; float: none; }
+.rslides li[hidden] { display: none; }
+.rslides li:first-child { float: none; }
+.rslides img { float: none; }
+.gallery-controls { display: flex; gap: 10px; justify-content: center; padding: 6px; background: #000; }
+button { color: white; background: transparent; border: 1px solid #666; cursor: pointer; padding: 3px 9px; font: inherit; transition: color .2s ease, background-color .2s ease; }
+button:hover { color: #89a3bc; background: #222; }
+a:focus-visible, button:focus-visible { outline: 2px solid #89a3bc; outline-offset: 3px; }
+.visually-hidden, .skip-link:not(:focus) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skip-link:focus { position: fixed; top: 5px; left: 5px; z-index: 20; background: black; padding: 10px; }
+#header_container.is-visible, #footer.is-visible { display: block; }
+.legacy-dialog { padding: 10px; background: white; color: black; border: 0; max-width: calc(100vw - 40px); }
+.legacy-dialog::backdrop { background: rgb(0 0 0 / 80%); }
+.legacy-dialog form { text-align: right; margin-bottom: 8px; }
+.legacy-dialog button { color: black; }
+.legacy-dialog > img { display: block; max-height: 75vh; max-width: 85vw; margin: auto; }
+.legacy-caption { font-family: carrois_gothicregular, sans-serif; max-width: 800px; margin-top: 8px; }
+.legacy-caption a { color: #36536e; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }

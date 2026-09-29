@@ -47,3 +47,12 @@ Third-party playback and external links can change independently of this code. T
 ## Original portfolio easter egg
 
 The small egg in the contact section links to /retro.php and cracks on hover or keyboard focus, respecting reduced-motion preferences. The original bitmap artwork, fixed-width layout and historical biography are preserved. The retro page has a small return link and is excluded from search indexing. PHP routes use a fixed allowlist; invalid or array inputs return 404. Native scrolling and accessible media dialogs replace Highslide, the custom scrollbar and Flash. Closing a video removes the player. Images and menu assets live in public/assets/retro/; no files are served from archive/. Historical third-party content may no longer be available; direct media links remain provided.
+
+
+## Preserved one-page legacy site
+
+`public/legacy.php` serves the pre-refresh one-page portfolio from fixed templates in `src/legacy/`. It is deliberately absent from the main navigation, footer and sitemap, and sends a noindex meta directive. It is an unlisted public URL, not a private page.
+
+`archive/legacy/` remains the historical source snapshot. The working copy preserves the original copy, portrait, fonts, section layout and galleries. Its self-contained assets live in `public/assets/legacy/`. Native gallery controls, pause/reduced-motion support, scrolling and image dialogs replace jQuery, ResponsiveSlides and Highslide; Flash, old browser shims and Universal Analytics are removed. The legacy media players retain lazy HTTPS embeds. Historical external links and third-party playback may have changed.
+
+Run `php tests/legacy.php` alongside the main and retro checks. No rewrite is required: visit `/legacy.php` directly.
