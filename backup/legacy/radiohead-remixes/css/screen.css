@@ -1,0 +1,176 @@
+@charset "UTF-8";
+a,
+body {
+    color: #fff;
+}
+.tagline,
+.title {
+    font-family: euro, sans-serif;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+@font-face {
+    font-family: euro;
+    src: url(../font/eurostib.ttf);
+}
+@font-face {
+    font-family: euro;
+    src: url(../font/eurostib.eot);
+}
+@font-face {
+    font-family: euro;
+    src: url(../font/eurostib.woff);
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: url(../background/present-tense.jpg) no-repeat #000;
+}
+a {
+    text-decoration: none;
+    -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -ms-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+}
+a:focus,
+a:hover {
+    color: #a01a21;
+}
+.bandcamp,
+.tagline,
+.title {
+    color: #fff;
+}
+.smooth-fonts {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.container {
+    width: 960px;
+    margin: 20px auto;
+}
+.title {
+    font-size: 2.7em;
+}
+.tagline,
+h1 {
+    font-size: 2em;
+}
+.tagline {
+    margin-top: -10px;
+}
+h2 {
+    font-size: 1.5em;
+}
+.description p,
+.footer {
+    line-height: 110%;
+    font-family: "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.description {
+    color: #fff;
+    margin: 20px 0;
+}
+.description p {
+    margin-bottom: 15px;
+}
+.footer {
+    margin: 20px 0;
+}
+.box {
+    background-color: #fff;
+    overflow: auto;
+    border-radius: 4px;
+}
+.soundcloud {
+    width: 450px;
+    float: left;
+}
+.soundcloud-inner {
+    padding: 20px 0 20px 20px;
+}
+.soundcloud iframe {
+    width: 430px;
+    border: 0;
+}
+.twitter {
+    width: 450px;
+    float: right;
+}
+.twitter-inner {
+    padding: 20px 20px 20px 0;
+}
+.twitter-timeline {
+    width: 450px;
+    height: 600px;
+}
+a,
+div,
+li,
+p,
+td {
+    -webkit-text-size-adjust: none;
+}
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 1.7em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    .container {
+        width: 100%;
+    }
+    .inner {
+        margin: 0 15px;
+    }
+    .description p {
+        font-size: 1em;
+    }
+    .soundcloud {
+        width: 100%;
+        padding: 0;
+        float: left;
+    }
+    .soundcloud-inner, .twitter-inner {
+        padding: 25px;
+    }
+    .soundcloud iframe, .twitter iframe {
+        width: 100% !important;
+    }
+    .twitter {
+        width: 100%;
+        padding: 0;
+        float: left;
+    }
+}
+@media print {
+    .container,
+    .twitter {
+        width: 100%;
+    }
+    .inner {
+        margin: 0 15px;
+    }
+    .soundcloud {
+        display: none;
+    }
+    .twitter {
+        padding: 0;
+        float: left;
+    }
+    .twitter-inner {
+        padding: 20px;
+    }
+    .twitter iframe {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /media/
+Disallow: /highslide/
+Disallow: /psd/
+Disallow: /retro.php
+Disallow: /private/apache/
+Allow: /
+

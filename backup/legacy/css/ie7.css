@@ -1,0 +1,411 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Fonts */
+
+@font-face {
+	font-family: 'League Gothic';
+	src: url('../fonts/leaguegothic-regular-webfont.eot');
+	src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/leaguegothic-regular-webfont.woff') format('woff'), url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'), url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'carrois_gothicregular';
+	src: url('../fonts/carroisgothic-regular-webfont.eot');
+	src: url('../fonts/carroisgothic-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/carroisgothic-regular-webfont.woff') format('woff'), url('../fonts/carroisgothic-regular-webfont.ttf') format('truetype'), url('../fonts/carroisgothic-regular-webfont.svg#carrois_gothicregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Standard Tags */
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body {
+	font-family: 'League Gothic', sans-serif;
+	color: #FFFFFF;
+	background-color: #000000;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+iframe {
+	width: 100%;
+	overflow: hidden;
+	border: none;
+}
+.bg-normal-right {
+	background-image: url(../images/pawel-osmolski-background-right.jpg)
+}
+.bg-normal-center {
+	background-image: url(../images/pawel-osmolski-background-horizontal.jpg)
+}
+.bg-glasses-right {
+	background-image: url(../images/pawel-osmolski-glasses-right.jpg)
+}
+.bg-glasses-center {
+	background-image: url(../images/pawel-osmolski-glasses-horizontal.jpg)
+}
+.bg-cover {
+	background-attachment: fixed!important;
+	background-size: cover!important;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+h1, h2, h3, h4 {
+	font-family: 'League Gothic', sans-serif;
+	margin: 0 0 27px 0;
+	padding-top: 0px;
+	font-weight: normal;
+}
+h2 {
+	font-size: 1.5em;
+}
+p, li {
+	font-family: 'carrois_gothicregular', sans-serif;
+	font-size: 0.8em;
+	line-height: 1.15em;
+}
+li {
+	list-style-type: square;
+}
+a {
+	color: #FFFFFF;
+	-webkit-transition: color 0.2s ease-out; /* Safari 3.2+, Chrome */
+	-moz-transition: color 0.2s ease-out; /* Firefox 4+ */
+	-ms-transition: color 0.2s ease-out; /* IE 10+ */
+	-o-transition: color 0.2s ease-out; /* Opera 10.5+ */
+	transition: color 0.2s ease-out;
+}
+a:hover, a:focus {
+	color: #89a3bc;
+}
+a:focus, a:active, a:visited {
+	outline: none;
+}
+a.title {
+	text-decoration: none;
+}
+a.link {
+	font-weight: bold;
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+/* No User Select */
+
+div {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* Social Media */
+
+#social-media-icons {
+	float: right;
+	text-align: right;
+	padding-right: 27px;
+}
+#facebook, #twitter, #bandcamp, #soundcloud, #instagram, #youtube, #linkedin, #contact {
+	height: 32px;
+	width: 32px;
+	margin-right: 6px;
+	margin-bottom: 6px;
+}
+#facebook {
+	background-image: url('../images/greenleaf/facebook.png');
+	background-size: cover;
+}
+#twitter {
+	background-image: url('../images/greenleaf/twitter.png');
+	background-size: cover;
+}
+#bandcamp {
+	background-image: url('../images/greenleaf/bandcamp.png');
+	background-size: cover;
+}
+#soundcloud {
+	background-image: url('../images/greenleaf/soundcloud.png');
+	background-size: cover;
+}
+#instagram {
+	background-image: url('../images/greenleaf/instagram.png');
+	background-size: cover;
+}
+#youtube {
+	background-image: url('../images/greenleaf/youtube.png');
+	background-size: cover;
+}
+#linkedin {
+	background-image: url('../images/greenleaf/linkedin.png');
+	background-size: cover;
+}
+#contact {
+	background-image: url('../images/greenleaf/contact.png');
+	background-size: cover;
+}
+.cssfade {
+	float: right;
+}
+.cssfade img {
+	-webkit-transition: all ease 0.2s;
+	-moz-transition: all ease 0.2s;
+	-o-transition: all ease 0.2s;
+	-ms-transition: all ease 0.2s;
+	transition: all ease 0.2s;
+}
+.cssfade img:hover {
+	opacity: 0;
+}
+/* Header */
+
+#header_container {
+	background-color: rgba(0, 0, 0, 0.6);
+	height: 60px;
+	left: 0;
+	position: fixed!important;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	margin: 0 auto;
+	display: none;
+	z-index: 9;
+}
+#header {
+	font-size: 1.8em;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+}
+/* Content */
+
+#container {
+	margin: 0 auto;
+	overflow: auto;
+	padding: 30px 10px 0px 10px;
+	width: 95%;
+	max-width: 1200px;
+}
+#title-menu {
+	margin: 0 auto;
+	width: 100%;
+	font-size: 1.5em;
+}
+.title-1 {
+	font-size: 4.05em;
+	line-height: 1.0em;
+	text-align: center;
+	padding-bottom: 11px;
+}
+.title-1 h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+.title-2 {
+	max-width: 452px;
+	border-top: solid 9px;
+	border-color: #FFFFFF;
+	text-align: center;
+	margin: 0 auto;
+}
+.title-3 {
+	padding-top: 20px;
+	font-size: 1.3em;
+	text-align: center;
+}
+.error {
+	margin: 0 auto;
+	padding-top: 20px;
+	text-align: center
+}
+.error img{
+	height:auto
+}
+/* Text Shadows */
+
+/*  #title-1, #title-3, .title, #intro-text, #music-text, #sound-design-text, #remix-text {
+	text-shadow: 2px 2px 6px rgba(20, 20, 20, 1);
+}
+
+#title-2 {
+	-webkit-box-shadow: 2px 2px 7px 0px rgba(20, 20, 20, 1);
+	-moz-box-shadow:    2px 2px 7px 0px rgba(20, 20, 20, 1);
+	box-shadow:         2px 2px 7px 0px rgba(20, 20, 20, 1);
+} */
+
+.section {
+	clear: left;
+	padding-top: 40px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.bottom-section {
+	clear: left;
+	padding: 90px 0px 0px 0px;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 100%;
+	font-size: 1.5em;
+}
+#intro-photo, #music-soundcloud, #sound-design-youtube, #remix-soundcloud, #web-design-mockups {
+	float: left;
+	padding-top: 33px;
+	padding-right: 35px;
+	width: 45%;
+	margin: 0 auto;
+	z-index: 1;
+}
+.responsive-video {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 20px;
+	height: 0;
+	overflow: hidden;
+}
+.responsive-video iframe, .responsive-video object, .responsive-video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.image-border {
+	border: 8px solid white;
+}
+.clear-mobile {
+	clear: none;
+}
+#intro-text, #music-text, #sound-design-text, #remix-text, #web-design-text {
+	padding-top: 33px;
+	float: left;
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+	line-height: 1.2em;
+}
+#nme-clipping {
+	float: right;
+	margin: 5px 0px 10px 5px;
+	width: 262px;
+	height: 130px;
+	border: 8px solid white;
+}
+.caption {
+	color: #000000;
+	font-family: 'carrois_gothicregular', sans-serif;
+	font-size: 1.2em;
+}
+#author {
+	font-size: 1.0em;
+	font-family: 'League Gothic', sans-serif;
+	text-align: center;
+}
+/* Footer */
+
+#footer {
+	font-size: 1.5em;
+	background-color: rgba(27, 54, 81, 0.95);
+	bottom: 0px;
+	height: 55px;
+	right: 0%;
+	left: 0%;
+	width: 100%;
+	text-align: center;
+	visibility: visible;
+	padding-top: 23px;
+	z-index: 9;
+}
+#footer-text {
+	float: left;
+	text-align: left;
+	padding-top: 2px;
+	padding-left: 27px;
+}
+
+/* Single column CSS */
+
+@media screen and (max-width: 1000px) {
+/* Clear For Mobile Devices */
+.clear-mobile {
+	clear: both;
+}
+/* Standard Tags */
+p, li {
+	font-size: 0.7em;
+}
+/* Content */
+#intro-photo, #intro-text, #music-soundcloud, #music-text, #sound-design-youtube, #sound-design-text, #remix-soundcloud, #remix-text, #web-design-mockups, #web-design-text {
+	float: none;
+	padding-right: 0px;
+	width: 100%;
+}
+#intro-photo {
+	display: none;
+}
+/* Footer */
+#social-media-icons, #footer-text {
+	float: none;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+#social-media-icons {
+	padding-top: 5px;
+}
+#footer {
+	padding-top: 8px;
+	padding-bottom: 3px;
+	height: auto;
+	font-size: 1.4em;
+}
+#footer-text {
+	padding-left: 0;
+	padding-top: 0;
+}
+}
+
+/* Pixel ratio of 2 */
+
+@media only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+#facebook {
+	background-image: url('../images/hires/greenleaf/facebook.png');
+	background-size: cover;
+}
+#twitter {
+	background-image: url('../images/hires/greenleaf/twitter.png');
+	background-size: cover;
+}
+#bandcamp {
+	background-image: url('../images/hires/greenleaf/bandcamp.png');
+	background-size: cover;
+}
+#soundcloud {
+	background-image: url('../images/hires/greenleaf/soundcloud.png');
+	background-size: cover;
+}
+#instagram {
+	background-image: url('../images/hires/greenleaf/instagram.png');
+	background-size: cover;
+}
+#youtube {
+	background-image: url('../images/hires/greenleaf/youtube.png');
+	background-size: cover;
+}
+#linkedin {
+	background-image: url('../images/hires/greenleaf/linkedin.png');
+	background-size: cover;
+}
+#contact {
+	background-image: url('../images/hires/greenleaf/contact.png');
+	background-size: cover;
+}
+}

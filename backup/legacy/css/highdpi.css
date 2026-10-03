@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+
+	.replace-2x {
+		font-size: 1px;
+	}
+
+}

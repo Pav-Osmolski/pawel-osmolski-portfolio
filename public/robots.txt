@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /media/
+Allow: /
+Sitemap: https://www.pawel-osmolski.com/sitemap.xml
