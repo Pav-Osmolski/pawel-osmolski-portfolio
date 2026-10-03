@@ -503,6 +503,9 @@ summary {
   cursor:pointer;
   color:var(--text);
 }
+.details-content {
+  display:flow-root;
+}
 details ul {
   padding-left:20px;
 }

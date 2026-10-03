@@ -48,3 +48,37 @@ if (dialog && typeof dialog.showModal === 'function') {
     if (event.target === dialog && (event.clientX < b.left || event.clientX > b.right || event.clientY < b.top || event.clientY > b.bottom)) dialog.close();
   });
 }
+
+
+document.querySelectorAll('[data-slide-details]').forEach((details) => {
+  const summary = details.querySelector('summary');
+  const content = details.querySelector('.details-content');
+  const motion = matchMedia('(prefers-reduced-motion: reduce)');
+  if (!summary || !content || typeof content.animate !== 'function') return;
+  let animation;
+  let expanded = details.open;
+  const finish = () => {
+    details.open = expanded;
+    animation?.cancel();
+    animation = null;
+    content.style.height = '';
+    content.style.overflow = '';
+  };
+  summary.addEventListener('click', (event) => {
+    if (motion.matches) return;
+    event.preventDefault();
+    const height = details.open ? content.getBoundingClientRect().height : 0;
+    expanded = animation ? !expanded : !details.open;
+    animation?.cancel();
+    details.open = true;
+    content.style.height = '';
+    const fullHeight = content.getBoundingClientRect().height;
+    content.style.overflow = 'hidden';
+    animation = content.animate(
+      [{ height: height + 'px' }, { height: (expanded ? fullHeight : 0) + 'px' }],
+      { duration: 200, easing: 'ease', fill: 'both' }
+    );
+    animation.onfinish = finish;
+  });
+  motion.addEventListener('change', () => { if (animation) finish(); });
+});
