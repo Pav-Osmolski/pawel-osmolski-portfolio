@@ -7,6 +7,7 @@
 <title><?= e($title) ?></title>
 <meta name="description" content="<?= e($description) ?>">
 <link rel="canonical" href="<?= e(SITE_ORIGIN . $path) ?>">
+<link rel="icon" href="<?= e(SITE_ORIGIN) ?>/favicon.ico" type="image/x-icon">
 <meta property="og:type" content="website">
 <meta property="og:title" content="<?= e($title) ?>">
 <meta property="og:description" content="<?= e($description) ?>">
