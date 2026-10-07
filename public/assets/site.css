@@ -119,12 +119,15 @@ nav a,.header-contact {
   isolation:isolate;
 }
 .hero:before {
+  background:linear-gradient(90deg,var(--bg) 8%,transparent 75%),linear-gradient(0deg,var(--bg),transparent 35%),url('/assets/images/portrait.jpg') 70% 10%/cover no-repeat;
+}
+.remix-hero:before, .hero:before {
   content:'';
   position:absolute;
   z-index:-1;
   inset:0 -48px;
-  background:linear-gradient(90deg,var(--bg) 8%,transparent 75%),linear-gradient(0deg,var(--bg),transparent 35%),url('/assets/images/portrait.jpg') 70% 10%/cover no-repeat;
   opacity:.66;
+  transition: opacity 0.6s ease;
 }
 .hero__copy {
   max-width:680px;
@@ -468,12 +471,7 @@ nav a,.header-contact {
   padding:65px 0 50px;
 }
 .remix-hero:before {
-  content:'';
-  position:absolute;
-  z-index:-1;
-  inset:0 -48px;
   background:linear-gradient(90deg,var(--bg) 8%,transparent 75%),linear-gradient(0deg,var(--bg),transparent 35%),url('/assets/images/portrait-glasses.jpg') 70% 10%/cover no-repeat;
-  opacity:.66;
 }
 .remix-hero>.text-link {
   display:inline-block;
@@ -570,7 +568,7 @@ details p {
   }
   .work-grid {
     grid-template-columns:1fr;
-    gap:30px;
+    gap:0;
   }
   .projects {
     gap:30px 18px;
