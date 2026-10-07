@@ -4,7 +4,9 @@ declare(strict_types=1);
 const SITE_ORIGIN = 'https://www.pawel-osmolski.com';
 function e(string $value): string { return htmlspecialchars($value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); }
 function asset(string $path): string {
-    $file = dirname(__DIR__) . '/public/assets/' . $path;
+    $root = dirname(__DIR__);
+    $publicDirectory = is_dir($root . '/public_html/assets') ? 'public_html' : 'public';
+    $file = $root . '/' . $publicDirectory . '/assets/' . $path;
     return '/assets/' . $path . '?v=' . (is_file($file) ? substr(hash_file('sha256', $file), 0, 10) : '1');
 }
 function page_start(string $title, string $description, string $path = '/'): void {
