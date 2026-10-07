@@ -10,6 +10,8 @@
 <meta name="language" content="EN" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5" />
 <meta name="robots" content="noindex, follow">
+<link rel="preload" href="/assets/legacy/fonts/leaguegothic-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/legacy/fonts/carroisgothic-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/legacy/legacy.css">
 <script src="/assets/legacy/legacy.js" defer></script>
 </head>
