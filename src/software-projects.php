@@ -1,11 +1,11 @@
 <?php
 return [
     [
-        'image' => 'ampboard.webp',
-        'name' => 'AMPBoard',
-        'role' => 'PHP · JavaScript · MySQL · Apache',
-        'detail' => 'A localhost and remote dashboard for XAMPP, LAMP and MAMP, with project discovery, live system stats and configuration tools.',
-        'url' => 'https://github.com/Pav-Osmolski/AMPBoard',
+        'image' => 'ds4windows.webp',
+        'name' => 'DS4Windows',
+        'role' => 'C# · .NET · WPF · USB/IP',
+        'detail' => 'An actively maintained continuation of DS4Windows, with advanced controller remapping, per-game profiles, DualSense haptics, refined UI and improved setup and diagnostics.',
+        'url' => 'https://github.com/Pav-Osmolski/DS4Windows',
     ],
     [
         'image' => 'darkonejsp3.webp',
@@ -15,11 +15,11 @@ return [
         'url' => 'https://github.com/Pav-Osmolski/DarkOneJSP3',
     ],
     [
-        'image' => 'ds4windows.webp',
-        'name' => 'DS4Windows',
-        'role' => 'C# · .NET · WPF · USB/IP',
-        'detail' => 'An actively maintained continuation of DS4Windows, with advanced controller remapping, per-game profiles, DualSense haptics, refined UI and improved setup and diagnostics.',
-        'url' => 'https://github.com/Pav-Osmolski/DS4Windows',
+        'image' => 'ampboard.webp',
+        'name' => 'AMPBoard',
+        'role' => 'PHP · JavaScript · MySQL · Apache',
+        'detail' => 'A localhost and remote dashboard for XAMPP, LAMP and MAMP, with project discovery, live system stats and configuration tools.',
+        'url' => 'https://github.com/Pav-Osmolski/AMPBoard',
     ],
     [
         'image' => 'rest.webp',
